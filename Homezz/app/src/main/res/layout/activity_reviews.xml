@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Company Name and Compact Navigation Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#F5F5DC"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start|center_vertical">
+
+                <TextView
+                    android:id="@+id/companyName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homez"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/companyName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Designer"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Details"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnPricing"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Pricing"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnDesigners"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Designers"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnReviews"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Reviews"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <!-- Testimonial 1 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/review1"
+                android:contentDescription="Testimonial 1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="From creating the perfect layout to finding pieces I absolutely loved, my designer really took my space to the next level. I never dreamed my home could look – and feel – this good!"
+                android:paddingStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Testimonial 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="I love interior design, but designer really used her professional eye to create an office design that was cohesive and beautiful. She completely understood my style and what I wanted - I love my office!"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/review2"
+                android:contentDescription="Testimonial 2"/>
+        </LinearLayout>
+
+        <!-- Testimonial 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/review3"
+                android:contentDescription="Testimonial 3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="I LOVE the new design John made for us! He hit the nail on the head and totally read my mind about what I wanted!!!"
+                android:paddingStart="16dp"/>
+        </LinearLayout>
+
+        <!-- All Reviews Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Reviews"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+        <!-- All Reviews List -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Christina"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod..."/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angela"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laurita"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi..."/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

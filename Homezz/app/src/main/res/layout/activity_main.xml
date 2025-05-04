@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Company Name and Compact Navigation Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#F5F5DC"
+            android:padding="8dp">
+
+            <!-- Company Name: two lines, stacked vertically -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start|center_vertical">
+
+                <TextView
+                    android:id="@+id/companyName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homez"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/companyName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Designer"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Details"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnPricing"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Pricing"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnDesigners"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Designers"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnReviews"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Reviews"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <!-- Hero Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/main_hero"
+            android:scaleType="centerCrop"
+            android:contentDescription="Hero Image"/>
+
+        <!-- Title and Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bold. Unique. Unforgettable. Elevate your space with eclectic design that reflects your personality and style."
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="#80000000"
+            android:padding="16dp"
+            android:gravity="center"/>
+
+        <!-- Feature Section 1 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/feature1"
+                android:scaleType="centerCrop"
+                android:contentDescription="Feature 1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="“A Home Without Limits: Eclectic Design That Speaks to Your Soul.”\nLet your personality, colors, materials, and style shine! Eclectic interiors blend rich details, character, comfort, and endless inspiration."
+                android:paddingStart="16dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <!-- Feature Section 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="“Eclectic Elegance: A Bold Fusion of Styles for a Home That Tells Your Story”\nMix vintage charm with modern flair, rich textiles with vibrant hues, and timeless pieces with bold accents—our designers help you curate a space as unique as you."
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/feature2"
+                android:scaleType="centerCrop"
+                android:contentDescription="Feature 2"/>
+        </LinearLayout>
+
+        <!-- Why Choose Us & Contact Form -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#fffbe7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Why Choose Us?"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Personalized, creative, and professional design\n• Unique, bold, and beautiful spaces\n• Easy process and expert guidance"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"/>
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"/>
+            <EditText
+                android:id="@+id/etPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Purpose"/>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Company Name and Compact Navigation Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#F5F5DC"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start|center_vertical">
+
+                <TextView
+                    android:id="@+id/companyName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homez"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/companyName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Designer"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Details"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnPricing"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Pricing"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnDesigners"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Designers"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnReviews"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Reviews"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <!-- Hero Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/designer_hero"
+            android:scaleType="centerCrop"
+            android:contentDescription="Designers Hero"/>
+
+        <!-- Designers List -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="16dp">
+
+            <!-- Designer 1 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="#e6d8c3"
+                android:padding="8dp"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/designer1"
+                    android:contentDescription="Designer 1"/>
+                <TextView android:text="Sharon" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Talk"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <Button android:text="$180" android:background="@drawable/rounded_button" android:textColor="#fff"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Designer 2 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="#e6d8c3"
+                android:padding="8dp"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/designer2"
+                    android:contentDescription="Designer 2"/>
+                <TextView android:text="John" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Talk"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <Button android:text="$299" android:background="@drawable/rounded_button" android:textColor="#fff"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Designer 3 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="#e6d8c3"
+                android:padding="8dp"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/designer3"
+                    android:contentDescription="Designer 3"/>
+                <TextView android:text="Peter Lin" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Talk"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <Button android:text="$499" android:background="@drawable/rounded_button" android:textColor="#fff"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Designer 4 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:background="#e6d8c3"
+                android:padding="8dp"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/designer4"
+                    android:contentDescription="Designer 4"/>
+                <TextView android:text="Tim James" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Talk"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <Button android:text="$165" android:background="@drawable/rounded_button" android:textColor="#fff"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
