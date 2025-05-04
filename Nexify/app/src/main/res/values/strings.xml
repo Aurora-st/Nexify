@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Nexify</string>
+    <string name="denotation_design">Denotation Design</string>
+    <string name="details">Details</string>
+    <string name="designers">Designers</string>
+    <string name="reviews">Reviews</string>
+    <string name="room1_desc">Main design room preview</string>
+    <string name="see_pricing">See Pricing</string>
+    <string name="design_virtually">Design Virtually</string>
+    <string name="design_virtual_desc">Consult our experts online to design your space.</string>
+    <string name="price_159">₹159</string>
+    <string name="hands_on_design">Hands-on Design</string>
+    <string name="hands_on_desc">Book an in-person visit from our designers.</string>
+    <string name="price_499">₹499</string>
+    <string name="step1">Step 1: Choose Your Style</string>
+    <string name="room2_desc">Sample room style for selection</string>
+    <string name="step2">Step 2: Virtual Preview</string>
+    <string name="room3_desc">Room after applying virtual preview</string>
+    <string name="step3">Step 3: Final Touch</string>
+    <string name="room4_desc">Final design room after setup</string>
+
+    <!-- Designer Names and Prices -->
+    <string name="designer_sharon">Sharon</string>
+    <string name="designer_john">John</string>
+    <string name="designer_peter">Peter Kin</string>
+    <string name="designer_tim">Tim Jones</string>
+    <string name="talk">🗨 Talk</string>
+    <string name="price_180">₹180</string>
+    <string name="price_299">₹299</string>
+    <string name="price_459">₹459</string>
+
+    <!-- Image Descriptions -->
+    <string name="img_main">Main design image</string>
+    <string name="img_designer1">Image of designer Sharon</string>
+    <string name="img_designer2">Image of designer John</string>
+    <string name="img_designer3">Image of designer Peter Kin</string>
+    <string name="img_designer4">Image of designer Tim Jones</string>
+
+    <!-- Design Virtually Page -->
+    <string name="design_virtually_title">Design Virtually</string>
+    <string name="take_photo">1. Take Photo</string>
+    <string name="see_sketch">2. See Sketch</string>
+    <string name="confirm">3. Confirm</string>
+    <string name="design_sketch_image_desc">Sketch of a room interior used for virtual design</string>
+
+</resources>
