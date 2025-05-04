@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FAF8ED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Havenly"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:text="Details"
+                style="@style/TabButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="0dp"/>
+
+            <Button
+                android:id="@+id/btnDesigners"
+                android:text="Designers"
+                style="@style/TabButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="0dp"/>
+
+            <Button
+                android:id="@+id/btnReviews"
+                android:text="Reviews"
+                style="@style/TabButton"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <!-- Review Highlights -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#D9CDB3"
+                android:padding="12dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/img_6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="8dp"/>
+                <TextView
+                    android:text="From creating the perfect layout to finding pieces I absolutely loved, my designer really took my space to the next level. I never dreamed my home could look – and feel – this good!"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#D9CDB3"
+                android:padding="12dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="I love interior design, but designer really used her professional eye to create an office design that was cohesive and beautiful. She completely understood my style and what I wanted - I love my office!!"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:src="@drawable/img_5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#D9CDB3"
+                android:padding="12dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/img_6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="8dp"/>
+                <TextView
+                    android:text="I LOVE the new design John made for us! He hit the nail on the head and totally read my mind about what I wanted!!!"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- All Reviews Section -->
+        <TextView
+            android:text="All Reviews"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Repeat for each review -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+                <ImageView
+                    android:src="@drawable/img_7"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp">
+                    <TextView
+                        android:text="Christina"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="I am so thankful for Havenly!..."
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Add more reviews as needed -->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
