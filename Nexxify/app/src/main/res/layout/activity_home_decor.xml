@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/search"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/search"
+            android:drawableEnd="@drawable/search"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:importantForAutofill="yes"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Banner Image -->
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            android:background="@drawable/rounded_corners"
+            android:contentDescription="@string/banner_desc"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/homeDecorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_decorations"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 2x2 Card Grid -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Card 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#D2BBA0"
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1">
+
+                <ImageView
+                    android:layout_width="124dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_2"
+                    android:background="@drawable/img_5"
+                    android:contentDescription="@string/havenly_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/havenly"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/style_bohemian"
+                    android:textColor="#444" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#fff"
+                    android:backgroundTint="#5B3A3A" />
+            </LinearLayout>
+
+            <!-- Card 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#D2BBA0"
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1">
+
+                <ImageView
+                    android:layout_width="134dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_4"
+                    android:background="@drawable/img_5"
+                    android:contentDescription="@string/homez_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/homez_designer"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/style_modern"
+                    android:textColor="#444" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#fff"
+                    android:backgroundTint="#5B3A3A" />
+            </LinearLayout>
+
+            <!-- Card 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#D2BBA0"
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_5"
+                    android:background="@drawable/circle_mask"
+                    android:contentDescription="@string/denotation_logo"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/denotation_design"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/style_minimalist"
+                    android:textColor="#444" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#fff"
+                    android:backgroundTint="#5B3A3A" />
+            </LinearLayout>
+
+            <!-- Card 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="#D2BBA0"
+                android:padding="12dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_rowWeight="1">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_2"
+                    android:background="@drawable/circle_mask"
+                    android:contentDescription="@string/vibe_logo"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vibe_space"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/style_artsy"
+                    android:textColor="#444" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#fff"
+                    android:backgroundTint="#5B3A3A" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
