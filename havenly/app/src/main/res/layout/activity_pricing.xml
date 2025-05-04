@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Company Name and Compact Navigation Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#F5F5DC"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="start|center_vertical">
+
+                <TextView
+                    android:id="@+id/companyName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Havenly"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <TextView
+                    android:id="@+id/companyName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Details"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnPricing"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Pricing"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnDesigners"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Designers"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"
+                android:layout_marginEnd="4dp"/>
+            <Button
+                android:id="@+id/btnReviews"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Reviews"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/rounded_button"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+        <!-- Hero Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/img_1"
+            android:scaleType="centerCrop"
+            android:contentDescription="Pricing Hero"/>
+
+        <!-- Pricing Cards -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView android:text="Design Virtually" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Your designer will collaborate with you online, providing creative direction and a full rendering of your space."
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <Button android:text="$199" android:background="@drawable/rounded_button" android:textColor="#fff"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:layout_marginStart="8dp">
+
+                <TextView android:text="Experience Hands-On Design" android:textStyle="bold"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Meet your designer at home for a personalized experience."
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <Button android:text="$499" android:background="@drawable/rounded_button" android:textColor="#fff"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Steps (as in screenshot) -->
+        <TextView android:text="Step 1: Choose a designer to be your personal guide."
+            android:background="#e6d8c3" android:padding="8dp" android:layout_margin="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:text="Step 2: Share your vision, and we'll start crafting your dream home."
+            android:background="#e6d8c3" android:padding="8dp" android:layout_margin="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:text="Step 3: Get inspired with stunning ideas to transform your space."
+            android:background="#e6d8c3" android:padding="8dp" android:layout_margin="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

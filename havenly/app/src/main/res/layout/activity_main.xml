@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <Button
+        android:id="@+id/btnDetails"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Details"
+        android:layout_marginBottom="12dp"
+        android:minHeight="48dp"
+        android:minWidth="88dp"/>
+
+    <Button
+        android:id="@+id/btnPricing"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Pricing"
+        android:layout_marginBottom="12dp"
+        android:minHeight="48dp"
+        android:minWidth="88dp"/>
+
+    <Button
+        android:id="@+id/btnDesigners"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Designers"
+        android:layout_marginBottom="12dp"
+        android:minHeight="48dp"
+        android:minWidth="88dp"/>
+
+    <Button
+        android:id="@+id/btnReviews"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Reviews"
+        android:minHeight="48dp"
+        android:minWidth="88dp"/>
+</LinearLayout>
